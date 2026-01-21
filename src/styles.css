@@ -1,0 +1,246 @@
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f1f8ff; 
+    color: #333;
+}
+
+.container {
+    max-width: 760px;
+    margin: 50px auto;
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease;
+}
+
+.container:hover {
+    transform: scale(1.02);
+}
+
+
+h1 {
+    text-align: center;
+    color: #1565c0;
+    font-size: 2.5em;
+    letter-spacing: 2px;
+    margin-bottom: 30px;
+    text-shadow: 1px 1px 5px rgba(0,0,0,0.1);
+}
+
+
+.ticket-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.ticket-form label {
+    color: #00796b; 
+    font-weight: bold;
+}
+
+.form-input, textarea {
+    width: 100%;
+    padding: 14px;
+    border: 2px solid #1565c0;
+    border-radius: 10px;
+    background-color: #e3f2fd; 
+    font-size: 16px;
+    transition: border 0.3s ease;
+}
+
+.form-input:focus, textarea:focus {
+    border-color: #0d47a1;
+}
+
+textarea {
+    min-height: 150px;
+    resize: vertical;
+    background-color: #f0f4c3; 
+}
+
+
+.priority-fieldset {
+    border: 1px solid #004d40;
+    padding: 20px;
+    border-radius: 15px;
+    background-color: #f1f8e9; 
+    transition: background-color 0.3s ease;
+}
+
+.priority-label {
+    margin-right: 20px;
+    font-weight: bold;
+    color: #004d40; 
+    display: flex;
+    align-items: center;
+}
+
+.priority-input {
+    margin-right: 8px;
+    transform: scale(1.2);
+}
+
+
+.button {
+    background: linear-gradient(45deg, #42a5f5, #007bff);
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 10px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background 0.3s ease, box-shadow 0.3s ease;
+}
+
+.button:hover {
+    background: linear-gradient(45deg, #007bff, #0056b3);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.button:active {
+    transform: translateY(2px);
+}
+
+
+.ticket-list {
+    margin-top: 40px;
+}
+
+.ticket-item {
+    background-color: #fce4ec; 
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+    margin-bottom: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.ticket-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.ticket-item h3 {
+    margin: 0 0 10px;
+    color: #880e4f; 
+    font-weight: bold;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.1);
+}
+
+.ticket-item p {
+    margin: 0 0 15px;
+}
+
+.priority-dot {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+}
+
+
+.priority-low {
+    background-color: #388e3c; 
+}
+
+.priority-medium {
+    background-color: #fbc02d; 
+}
+
+.priority-high {
+    background-color: #d32f2f; 
+}
+
+
+.results {
+    margin-top: 50px;
+}
+
+.results h2 {
+    color: #1565c0;
+}
+
+select {
+    padding: 12px;
+    border-radius: 30px;
+    border: 2px solid #00796b;
+    background-color: #e0f7fa; 
+    color: #00796b;
+    cursor: pointer;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+select:hover {
+    background-color: #b2ebf2;
+    border-color: #004d40;
+}
+.ticket-item {
+    padding: 10px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    position: relative;
+    transition: background-color 0.3s ease; 
+}
+
+
+.priority-low {
+    background-color: #d1e7dd; 
+}
+
+.priority-medium {
+    background-color: #fff3cd; 
+}
+
+.priority-high {
+    background-color: #f8d7da;
+}
+.ticket-item {
+    padding: 10px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    position: relative;
+    transition: background-color 0.3s ease; 
+}
+
+
+.priority-low {
+    background-color: #d1e7dd; 
+}
+
+.priority-medium {
+    background-color: #fff3cd; 
+}
+
+.priority-high {
+    background-color: #f8d7da; 
+}
+
+
+.ticket-item button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    gap: 10px;
+}
+
+.ticket-item button:hover {
+    background-color: #0056b3; 
+}
